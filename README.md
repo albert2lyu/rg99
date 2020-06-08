@@ -53,7 +53,6 @@ Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getti
 -  download v1.0_sdcard.img.7z from release page
 -  prepare 4GB MicroSD
 -  flash sdcard.img into MicroSD
--  put MicroSD into RG99 and then power up
   
 ## UART debug
 -  solder UART
