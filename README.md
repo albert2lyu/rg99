@@ -35,8 +35,6 @@ Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getti
    -  $ cd buildroot
    -  $ make rg99_defconfig
    -  $ make
--  for kernel (enable UART), copy "arch/mips/boot/dts/ingenic/rg99_dbg.dts" to "arch/mips/boot/dts/ingenic/rg99.dts"
--  for kernel (disable UART), copy "arch/mips/boot/dts/ingenic/rg99_rel.dts" to "arch/mips/boot/dts/ingenic/rg99.dts"
   
 ### build kernel
 -  download kernel_v1.0.tar.gz from release page
@@ -45,6 +43,8 @@ Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getti
    -  $ cd kernel
    -  $ ARCH=mips CROSS_COMPILE=mipsel-linux- make rg99_defconfig
    -  $ ARCH=mips CROSS_COMPILE=mipsel-linux- make uzImage.bin dtbs -j8
+-  for kernel (enable UART), copy "arch/mips/boot/dts/ingenic/rg99_dbg.dts" to "arch/mips/boot/dts/ingenic/rg99.dts"
+-  for kernel (disable UART), copy "arch/mips/boot/dts/ingenic/rg99_rel.dts" to "arch/mips/boot/dts/ingenic/rg99.dts"
   
 ### flash bootloader
 -  download flasher.tar.gz from release page
