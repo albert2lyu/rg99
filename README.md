@@ -21,7 +21,7 @@ Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getti
 ## How to build Linux OS for RG99  
 ### prepare environment
 -  Debian 9 (x64)
--  download all of sources in release page
+-  all of source code and prebuilt binary can be found from release page
   
 ### configure toolchain
 -  extract toolchain_rg99.7z into /opt/rg99
