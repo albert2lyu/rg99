@@ -9,7 +9,7 @@ Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getti
 |CPU      |Ingenic JZ4725B 360MHz                      |
 |RAM      |32MB                                        |
 |Storage  |256GB                                       |
-|Screen   |2.8" 320x240                                |
+|Screen   |2.8" 320x480                                |
 |Slot     |MicroSD                                     |
 |Gamepad  |DPad, 4 Buttons, M1, M2, Start, Select, L, R|
 |USB      |Client                                      |
