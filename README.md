@@ -66,6 +66,7 @@ Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getti
 -  use root login
 -  now, you can start to debug your program (gdb and perf tools are preinstalled in rootfs already)
 -  if you want to disable gmenu2x from boot, edit "etc/init.d/S01syslogd" and then comment out "/etc/main &"
+-  all of post tasks are put in "/usr/sbin/post_init" file (include audio init and USB storage init)
 -  enjoy !
   
 ### https://steward-fu.github.io/website/index.htm
