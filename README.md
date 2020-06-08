@@ -2,7 +2,7 @@
 ![Alt text](imgs/main.jpg)
   
 ## Introduction
-Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getting better and better. Based on OpenDingux resources, now, Linux OS can run on RG99 handheld. If you would like to port some emulators or games into this device, you can follow the build instrcution below, thanks !  
+Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getting better and better. Based on OpenDingux resources, now, Linux OS can run on RG99 handheld. If you would like to port some emulators or games into this device, you can follow the build instruction below, thanks !  
   
 |Component|Description                                 |
 |---------|--------------------------------------------|
@@ -35,10 +35,12 @@ Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getti
    -  $ cd buildroot
    -  $ make rg99_defconfig
    -  $ make
+-  for kernel (enable UART), copy "arch/mips/boot/dts/ingenic/rg99_dbg.dts" to "arch/mips/boot/dts/ingenic/rg99.dts"
+-  for kernel (disable UART), copy "arch/mips/boot/dts/ingenic/rg99_rel.dts" to "arch/mips/boot/dts/ingenic/rg99.dts"
   
 ### build kernel
 -  download kernel_v1.0.tar.gz from release page
--  command
+-  command:
    -  $ $ tar xvf kernel_v1.0.tar.gz
    -  $ cd kernel
    -  $ ARCH=mips CROSS_COMPILE=mipsel-linux- make rg99_defconfig
@@ -67,6 +69,5 @@ Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getti
 -  now, you can start to debug your program (gdb and perf tools are preinstalled in rootfs already)
 -  if you want to disable gmenu2x from boot, edit "etc/init.d/S01syslogd" and then comment out "/etc/main &"
 -  all of post tasks are put in "/usr/sbin/post_init" file (include audio init and USB storage init)
--  enjoy !
   
 ### https://steward-fu.github.io/website/index.htm
