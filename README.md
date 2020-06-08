@@ -2,7 +2,7 @@
 ![Alt text](imgs/main.jpg)
   
 ## Introduction
-Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getting better and better. Based on OpenDingux resources, now, Linux OS can run on RG99 handheld. If you would like to port some emulators or games into this device, you can follow the build instruction below, thanks !  
+Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getting better and better. Based on OpenDingux resource, now, Linux OS can run on RG99 handheld. If you would like to port some emulators or games into this device, you can follow the build instruction below, thanks !  
   
 |Component|Description                                 |
 |---------|--------------------------------------------|
