@@ -25,12 +25,12 @@ Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getti
   
 ### configure toolchain
 -  extract toolchain_rg99.7z into /opt/rg99
--  export command
+-  command:
    -  export PATH=$PATH:/opt/rg99/usr/bin
    
 ### build buildroot
 -  download buildroot.tar.gz from release page
--  command
+-  command:
    -  $ make rg99_defconfig
    -  $ make
   
