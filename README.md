@@ -31,16 +31,12 @@ Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getti
 ### build buildroot
 -  download buildroot.tar.gz from release page
 -  command
-   -  $ tar xvf buildroot.tar.gz
-   -  $ cd buildroot
    -  $ make rg99_defconfig
    -  $ make
   
 ### build kernel
 -  download kernel_v1.0.tar.gz from release page
 -  command:
-   -  $ $ tar xvf kernel_v1.0.tar.gz
-   -  $ cd kernel
    -  $ ARCH=mips CROSS_COMPILE=mipsel-linux- make rg99_defconfig
    -  $ ARCH=mips CROSS_COMPILE=mipsel-linux- make uzImage.bin dtbs -j8
 -  for kernel (enable UART), copy "arch/mips/boot/dts/ingenic/rg99_dbg.dts" to "arch/mips/boot/dts/ingenic/rg99.dts"
