@@ -35,6 +35,26 @@ Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getti
    -  $ cd buildroot
    -  $ make rg99_defconfig
    -  $ make
-   
+  
+### build kernel
+-  download kernel_v1.0.tar.gz from release page
+-  command
+   -  $ $ tar xvf kernel_v1.0.tar.gz
+   -  $ cd kernel
+   -  $ ARCH=mips CROSS_COMPILE=mipsel-linux- make rg99_defconfig
+   -  $ ARCH=mips CROSS_COMPILE=mipsel-linux- make uzImage.bin dtbs -j8
+  
+### flash bootloader
+-  download flasher.tar.gz from release page
+-  put RG99 into boot mode (Press START and then power up)
+-  plug USB into PC
+-  command:
+   -  $ sudo flash.sh
+  
+### flash system
+-  download v1.0_sdcard.img.7z from release page
+-  prepare 4GB MicroSD
+-  flash sdcard.img into MicroSD
+-  put MicroSD into RG99 and then power up
   
 ### https://steward-fu.github.io/website/index.htm
