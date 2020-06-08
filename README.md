@@ -59,7 +59,7 @@ Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getti
   
 ## UART debug
 -  solder UART
-![Alt text](imgs/uart.jpg)
+-  ![Alt text](imgs/uart.jpg)
 -  download v1.0_boot_dbg.tar.gz from release page
 -  overwrite uzImage.bin and rg99.dtb in boot partition (MicroSD)
 -  open minicom or putty with baudrate 57600bps
