@@ -57,4 +57,14 @@ Thanks Paul Cercueil and Opendingux development team. OpenDingux system is getti
 -  flash sdcard.img into MicroSD
 -  put MicroSD into RG99 and then power up
   
+## UART debug
+-  solder UART
+![Alt text](imgs/uart.jpg)
+-  download v1.0_boot_dbg.tar.gz from release page
+-  overwrite uzImage.bin and rg99.dtb in boot partition (MicroSD)
+-  open minicom or putty with baudrate 57600bps
+-  use root login
+-  now, you can start to debug your program (gdb and perf tools are preinstalled in rootfs already)
+-  enjoy !
+  
 ### https://steward-fu.github.io/website/index.htm
